@@ -18,9 +18,9 @@
 </head>
 <body>
     <header>
-        <div class="data-modal is-hidden" data-modal>
-            <div class="modal">
-                <button class="popup-button" data-modal-close>
+        <div class="popup-form is-hidden" data-modal>
+            <div class="popup-form__window">
+                <button class="popup-form__close-btn" data-modal-close>
                     <div>
                         <span></span>
                         <span></span>
@@ -32,7 +32,7 @@
                         Imie
                         <div>
                             <input type="text" name="imie">
-                            <span class="input--icon">
+                            <span class="input-icon">
                                 <svg width="12" height="12">
                                     <use href="/images/icons.svg#icon-input-name"></use>
                                 </svg>
@@ -43,7 +43,7 @@
                         Telefon
                         <div>
                             <input type="tel" name="phone_number">
-                            <span class="input--icon">
+                            <span class="input-icon">
                                 <svg height="13" width="13">
                                     <use href="/images/icons.svg#icon-input-phone"></use>
                                 </svg>
@@ -54,7 +54,7 @@
                         Email
                         <div>
                             <input type="email" name="email">
-                            <span class="input--icon">
+                            <span class="input-icon">
                                 <svg width="15" height="12">
                                     <use href="/images/icons.svg#icon-input-mail"></use>
                                 </svg>
@@ -77,23 +77,22 @@
                         </div>
                         <p>Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></p> 
                     </label>
-
-
                     <button type="submit">Wyślij</button>
                 </form>
             </div>
         </div>
+
         <div class="navbar-wrapper">
             <div class="navbar">
-                <a class="logo--black" href="/index.html"><span>Web</span>Studio</a>
-                <nav>
-                    <ul>
-                        <li class="nav-active-page"><a href="/index.html">Agencja</a></li>
+                <a class="logo logo--black" href="/index.html"><span>Web</span>Studio</a>
+                <nav class="navigation">
+                    <ul class="navigation__list">
+                        <li class="navigation__active-page"><a href="/index.html">Agencja</a></li>
                         <li><a href="/portfolio/">Portfolio</a></li>
                         <li><a href="#">Kontakt</a></li>
                     </ul>
                 </nav>
-                <ul>
+                <ul class="navbar__contact-list">
                     <li>
                         <svg width="16" height="12">
                             <use href="/images/icons.svg#icon-envelope"></use>
@@ -113,7 +112,7 @@
         </div>
         <div class="splash">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-            <button class="splash-button" data-modal-open type="button">Zamów usługę</button>
+            <button class="splash__button" data-modal-open type="button">Zamów usługę</button>
         </div>
     </header>
 
@@ -418,7 +417,7 @@
         <div class="container">
             <ul class="footer-list">
                 <li>
-                    <a class="logo--white" href="/index.html"><span>Web</span>Studio</a>
+                    <a class="logo logo--white" href="/index.html"><span>Web</span>Studio</a>
                     <address>
                         <ul class="address-footer">
                             <li>

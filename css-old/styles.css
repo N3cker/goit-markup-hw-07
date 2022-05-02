@@ -1,12 +1,12 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
+} */
 
 /* Colors */
-:root {
+/* :root {
   --color-blue: #2196F3;
   --color-black: #212121;
   --color-grey: #2F303A;
@@ -16,10 +16,10 @@
   --color-light-border: #EEEEEE;
   --color-nav-border: #ECECEC;
   --color-grey-icons: #AFB1B8;
-}
+} */
 
 /* Global */
-body {
+/* body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-black);
 }
@@ -53,10 +53,10 @@ body h2 {
 .container {
   width: 1200px;
   margin: 0 auto;
-}
+} */
 
 /* Buttons */
-.splash-button {
+/* .splash-button {
   width: 200px;
   height: 50px;
   background-color: var(--color-blue);
@@ -99,10 +99,10 @@ body h2 {
   color: var(--color-white);
   margin-top: 30px;
   cursor: pointer;
-}
+} */
 
 /* Logo */
-.logo--black {
+/* .logo--black {
   display: inline;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -123,22 +123,22 @@ body h2 {
 
 .logo--white span {
   color: var(--color-blue);
-}
+} */
 
 /* Navigation */
-nav ul li {
+/* nav ul li {
   padding: 0 23px;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
   font-size: 14px;
 }
 
 nav ul li a:hover {
   color: var(--color-blue);
-}
+} */
 
-.nav-active-page::after {
+/* .navigation__active-page::after {
   content: "";
   position: absolute;
   bottom: -1px;
@@ -146,18 +146,18 @@ nav ul li a:hover {
   height: 4px;
   width: 55px;
   background-color: var(--color-blue);
-}
+} */
 
-.nav-active-page a {
+/* .navigation__active-page a {
   color: var(--color-blue);
-}
+} */
 
 /* Header */
-header {
+/* header {
   width: 100%;
-}
+} */
 
-header .navbar {
+/* header .navbar {
   width: 100%;
   height: 80px;
   display: -webkit-box;
@@ -172,41 +172,40 @@ header .navbar {
   margin: 0 auto;
   width: 1200px;
   
-}
+} */
 
-header .navbar-wrapper {
+/* header .navbar-wrapper {
   border: 1px solid var(--color-nav-border);
   position: relative;
-}
+} */
 
-header .navbar ul {
+/* header .navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
+} */
 
-header .navbar ul li {
+/* header .navbar ul li {
   padding: 0 25px;
-}
+} */
 
-header .navbar ul li svg {
+/* header .navbar ul li svg {
   transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-header .navbar ul li a {
+/* header .navbar ul li a {
   font-size: 14px;
   font-weight: 500;
   transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
+} */
 
-}
-
-header .navbar ul li:hover a {
+/* header .navbar ul li:hover a {
   color: var(--color-blue);
-}
+} */
 
-header .navbar ul li:hover svg {
+/* header .navbar ul li:hover svg {
   fill: var(--color-blue);
-}
+} */
 
 
 /* Splash */
@@ -576,7 +575,7 @@ footer .media-icons-list svg {
 }
 
 /* Modal */
-.data-modal {
+/* .popup-form {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.2);
@@ -587,23 +586,23 @@ footer .media-icons-list svg {
   justify-content: center;
   align-items: center;
   transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   pointer-events: none;
-}
+} */
 
-.modal {
+/* .popup-form__window {
   position: relative;
   height: 581px;
   width: 528px;
   background-color: var(--color-white);
   border-radius: 4px;
   padding: 40px;
-}
+} */
 
-.popup-button {
+/* .popup-form__close-btn {
   position: absolute;
   right: 8px;
   top: 8px;
@@ -613,15 +612,15 @@ footer .media-icons-list svg {
   height: 30px;
   background-color: transparent;
   cursor: pointer;
-}
+} */
 
-.popup-button div {
+/* .popup-form__close-btn div {
   position: relative;
   width: 100%;
   height: 100%;
-}
+} */
 
-.popup-button span {
+/* .popup-form__close-btn span {
   display: block;
   width: 16px;
   height: 2px;
@@ -630,20 +629,20 @@ footer .media-icons-list svg {
   left: 51%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
-}
+} */
 
-.popup-button span:last-child {
+/* .popup-form__close-btn span:last-child {
   transform: translate(-50%, -50%) rotate(-45deg);
-}
+} */
 
-.modal form {
+/* .modal form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
-}
+} */
 
-.modal form input {
+/* .modal form input {
   height: 40px;
   width: 100%;
   border: none;
@@ -652,13 +651,13 @@ footer .media-icons-list svg {
   padding: 12px;
   padding-left: 42px;
   transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.modal form label input:focus {
+/* .modal form label input:focus {
   outline: 2px solid var(--color-blue);
-}
+} */
 
-.modal form textarea {
+/* .modal form textarea {
   width: 100%;
   height: 120px;
   border: none;
@@ -667,35 +666,35 @@ footer .media-icons-list svg {
   resize: none;
   padding: 12px;
   transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.modal form label textarea:focus {
+/* .modal form label textarea:focus {
   outline: 2px solid var(--color-blue);
-}
+} */
 
-.modal h3 {
+/* .modal h3 {
   text-align: center;
   font-size: 20px;
   margin-bottom: 12px;
-}
+} */
 
-.modal label {
+/* .modal label {
   font-size: 12px;
   color: var(--color-light-grey);
-}
+} */
 
-.modal label a {
+/* .modal label a {
   text-decoration: underline;
   color: var(--color-blue);
-}
+} */
 
-.modal form label input[type=checkbox] {
+/* .modal form label input[type=checkbox] {
   width: 16px;
   height: 15px;
   margin-bottom: 30px;
-}
+} */
 
-.modal form button {
+/* .modal form button {
   width: 200px;
   height: 50px;
   margin: 0 auto;
@@ -706,13 +705,13 @@ footer .media-icons-list svg {
   color: var(--color-white);
   font-size: 16px;
   cursor: pointer;
-}
+} */
 
-.modal form label div {
+/* .modal form label div {
   position: relative;
-}
+} */
 
-.modal .input--icon {
+/* .modal .input-icon {
   position: absolute;
     left: 0;
     top: 50%;
@@ -720,49 +719,49 @@ footer .media-icons-list svg {
     display: block;
     width: 12px;
     height: 12px;
-}
+} */
 
-.modal form label div .input--icon svg {
+/* .modal form label div .input-icon svg {
   transition: fill .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.modal form label div input:focus + .input--icon svg {
+/* .modal form label div input:focus + .input-icon svg {
   fill: var(--color-blue);
-}
+} */
 
-.modal form label textarea::placeholder {
+/* .modal form label textarea::placeholder {
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 
-.modal form .checkbox-wrapper {
+/* .modal form .checkbox-wrapper {
   display: flex;
   align-items: center;
   padding: 20px 10px 20px 15px;
-}
+} */
 
-.modal form .checkbox-wrapper > div {
+/* .modal form .checkbox-wrapper > div {
   width: 16px;
   height: 16px;
   position: relative;
   margin-right: 10px;
-}
+} */
 
-.modal form .checkbox-wrapper input[type=checkbox]{
+/* .modal form .checkbox-wrapper input[type=checkbox]{
   opacity: 0;
   width: 100%;
   height: 100%;
-}
+} */
 
-.modal form .checkbox-wrapper input[type=checkbox]:checked + div{
+/* .modal form .checkbox-wrapper input[type=checkbox]:checked + div{
   background-color: var(--color-blue);
   border: none;
-}
+} */
 
-.modal form .checkbox-wrapper input[type=checkbox]:checked + div svg{
+/* .modal form .checkbox-wrapper input[type=checkbox]:checked + div svg{
   display: block;
-}
+} */
 
-.modal form .checkbox-wrapper > div > div{
+/* .modal form .checkbox-wrapper > div > div{
   pointer-events: none;
   position: absolute;
   left: 0;
@@ -777,19 +776,19 @@ footer .media-icons-list svg {
   border-radius: 3px;
   box-sizing: border-box;
   transition: background-color .25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.modal form .checkbox-wrapper svg{
+/* .modal form .checkbox-wrapper svg {
   display: none;
   fill: white;
-}
+} */
 
-.modal form .checkbox-wrapper p {
+/* .modal form .checkbox-wrapper p {
   font-size: 14px;
-}
+} */
 
 /* Portfolio page */
-.portfolio-buttons-wrapper {
+.portfolio__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -799,7 +798,7 @@ footer .media-icons-list svg {
   padding-bottom: 50px;
 }
 
-.portfolio-buttons-wrapper li {
+.portfolio__buttons li {
   padding-left: 8px;
 }
 
