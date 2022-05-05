@@ -23,7 +23,7 @@
             }
         }
 
-        .navbar__contact-list {
+        &__contact-list {
 
             li {
                 padding: 0 25px;
@@ -35,48 +35,48 @@
                 a {
                     transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
                 }
-            }
 
-            li:hover {
-                svg {
-                    fill: $color-blue;
-                }
-
-                a {
-                    color: $color-blue;
+                &:hover {
+                    svg {
+                        fill: $color-blue;
+                    }
+        
+                    a {
+                        color: $color-blue;
+                    }
                 }
             }
         }
 
         .navigation {
-            .navigation__list {
+            &__list {
                 li {
                     padding: 0 23px;
 
                     a {
                         font-size: 14px;
                         transition: color .25s cubic-bezier(0.4, 0, 0.2, 1);
-                    }
-
-                    a:hover {
-                        color: $color-blue;
+                        
+                        &:hover {
+                            color: $color-blue;
+                        }
                     }
                 }
 
-                .navigation__active--page {
+                .navigation__active-page {
                     a {
                         color: $color-blue;
                     }
-                }
-
-                .navigation__active-page::after {
-                    content: "";
-                    position: absolute;
-                    bottom: -1px;
-                    display: block;
-                    height: 4px;
-                    width: 55px;
-                    background-color: $color-blue;
+                    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1px;
+                        display: block;
+                        height: 4px;
+                        width: 55px;
+                        background-color: $color-blue;
+                    }
                 }
             }
         }

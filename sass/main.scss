@@ -1,7 +1,15 @@
-@import "utils/_vars.scss";
+@import "utils/vars";
 
-@import "components/_global.scss";
-@import "components/_buttons.scss";
-@import "components/_logo.scss";
-@import "components/_navigation.scss";
-@import "components/_modal.scss";
+@import "components/global";
+@import "components/buttons";
+@import "components/logo";
+@import "components/navigation";
+@import "components/modal";
+@import "components/splash";
+@import "components/strengths";
+@import "components/about";
+@import "components/ourteam";
+@import "components/ourclients";
+@import "components/footer";
+
+@import "components/portfolioGallery"

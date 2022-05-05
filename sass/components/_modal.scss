@@ -1,4 +1,4 @@
-.popup-form {
+.popup-container {
     height: 100vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.2);
@@ -10,7 +10,7 @@
     align-items: center;
     transition: opacity .25s cubic-bezier(0.4, 0, 0.2, 1);
 
-    .popup-form__window {
+    &__window {
         position: relative;
         height: 581px;
         width: 528px;
@@ -18,7 +18,7 @@
         border-radius: 4px;
         padding: 40px;  
 
-        .popup-form__close-btn {
+        .popup-container__close-btn {
             position: absolute;
             right: 8px;
             top: 8px;
@@ -43,10 +43,10 @@
                     left: 51%;
                     top: 50%;
                     transform: translate(-50%, -50%) rotate(45deg);
-                }
 
-                span:last-child {
-                    transform: translate(-50%, -50%) rotate(-45deg);
+                    &:last-child {
+                        transform: translate(-50%, -50%) rotate(-45deg);
+                    }
                 }
             }
         }
@@ -57,7 +57,7 @@
             margin-bottom: 12px;            
         }
 
-        form {
+        .popup-form {
             display: flex;
             flex-direction: column;
             gap: 10px;
@@ -77,17 +77,17 @@
                         outline: 1px solid rgba(33, 33, 33, 0.2);
                         border-radius: 4px;
                         padding: 12px;
-                        padding-left: 12px;
+                        padding-left: 38px;
                         transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
-                    }
-                    
-                    input:focus {
-                        outline: 2px solid $color-blue;
-                    }  
-                    
-                    input:focus + .input-icon {
-                        svg {
-                            fill: $color-blue;
+
+                        &:focus {
+                            outline: 2px solid $color-blue;
+                        }
+
+                        &:focus + .input-icon {
+                            svg {
+                                fill: $color-blue;
+                            }
                         }
                     }
                     
@@ -115,28 +115,15 @@
                     resize: none;
                     padding: 12px;
                     transition: outline .25s cubic-bezier(0.4, 0, 0.2, 1);
-                }
 
-                textarea::placeholder {
-                    color: rgba(117, 117, 117, 0.5);
-                }
+                    &::placeholder {
+                        color: rgba(117, 117, 117, 0.5);
+                    }
 
-                textarea:focus {
-                    outline: 2px solid $color-blue;
+                    &:focus {
+                        outline: 2px solid $color-blue;
+                    }
                 }
-            }
-
-            button {
-                width: 200px;
-                height: 50px;
-                margin: 0 auto;
-                border: none;
-                background: $color-blue;
-                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-                border-radius: 4px;
-                color: $color-white;
-                font-size: 16px;
-                cursor: pointer;
             }
 
             .checkbox-wrapper {
@@ -157,14 +144,14 @@
                         width: 16px;
                         height: 15px;
                         margin-bottom: 30px;
-                    }
 
-                    input[type="checkbox"]:checked + div {
-                        background-color: $color-blue;
-                        border: none;
-
-                        svg {
-                            display: block;
+                        &:checked + div {
+                            background-color: $color-blue;
+                            border: none;
+        
+                            svg {
+                                display: block;
+                            }
                         }
                     }
 

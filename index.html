@@ -18,16 +18,16 @@
 </head>
 <body>
     <header>
-        <div class="popup-form is-hidden" data-modal>
-            <div class="popup-form__window">
-                <button class="popup-form__close-btn" data-modal-close>
+        <div class="popup-container is-hidden" data-modal>
+            <div class="popup-container__window">
+                <button class="popup-container__close-btn" data-modal-close>
                     <div>
                         <span></span>
                         <span></span>
                     </div>
                 </button>
                 <h3>Zostaw swoje dane w formularzu poniżej</h3>
-                <form>
+                <form class="popup-form">
                     <label>
                         Imie
                         <div>
@@ -77,7 +77,7 @@
                         </div>
                         <p>Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></p> 
                     </label>
-                    <button type="submit">Wyślij</button>
+                    <button class="popup-form__btn" type="submit">Wyślij</button>
                 </form>
             </div>
         </div>
@@ -112,7 +112,7 @@
         </div>
         <div class="splash">
             <h1>EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU </h1>
-            <button class="splash__button" data-modal-open type="button">Zamów usługę</button>
+            <button class="splash__btn" data-modal-open type="button">Zamów usługę</button>
         </div>
     </header>
 
@@ -176,7 +176,7 @@
         <section class="about">
             <div class="container">
                 <h2>Czym się zajmujemy</h2>
-                <ul>
+                <ul class="about__list">
                     <li>
                         <figure>
                             <img src="/images/img.jpg" width="370" height="294" alt="photo">
@@ -202,7 +202,7 @@
         <section class="our-team">
             <div class="container">
                 <h2>Nasz zespół</h2>
-                <ul>
+                <ul our-team__list>
                     <li>
                         <figure>
                             <img src="/images/team1.jpg" width="270" height="260" alt="John Doe">
@@ -465,9 +465,9 @@
                         </li>
                     </ul>
                 </li>
-                <li class="newsletter-wrapper">
+                <li class="newsletter">
                     <h4>ZAPISZ SIĘ DO NEWSLETTERA</h4>
-                    <form class="newsletter">
+                    <form class="newsletter__form">
                         <input type="email" name="email" placeholder="E-mail">
                         <button type="submit">
                             <span>Zapisz Się</span>
